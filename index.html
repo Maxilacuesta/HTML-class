@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8, que admite una amplia gama de caracteres. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles, asegurando que la página se ajuste al ancho del dispositivo y tenga un nivel de zoom inicial de 1. -->
+
+    <title>clases de html</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador. -->
+
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 3px solid black;
+            /* Aplica un borde negro sólido de 3 píxeles a la tabla, filas, encabezados y celdas. */
+        }
+    </style>
+    <!-- Se agrega un estilo para que la tabla y sus elementos tengan bordes visibles. -->
+</head>
+
+<body>
+    <!-- Contenido visible de la página web va aquí -->
+
+    <!-- INICIO DE TABLA -->
+    <table>
+        <!-- Encabezado de la tabla -->
+        <thead>
+            <tr>
+                <th>EEUU</th> <!-- Encabezado de columna para EEUU -->
+                <th>Uruguay</th> <!-- Encabezado de columna para Uruguay -->
+            </tr>
+        </thead>
+
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>hola</td> <!-- Celda de datos: "hola" -->
+                <td>gratis</td> <!-- Celda de datos: "gratis" -->
+            </tr>
+        </tbody>
+
+        <!-- Pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td>Ejemplo 2</td> <!-- Celda en el pie de la tabla -->
+            </tr>
+        </tfoot>
+    </table>
+    <!-- FIN DE TABLA -->
+
+    <!-- INICIO DE LISTAS -->
+    <ul><!-- ul-lista no ordenada-guía por viñeta -->
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+    </ul>
+
+    <!-- ol-Lista ordenada -->
+    <ol>
+        <li>elemento 1</li> <!-- li-elementos de la lista-guía por número -->
+        <li value="20">elemento 2</li> <!-- normalmente empieza en 1, aquí empieza desde 20 -->
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+
+        <li><!-- anidado de lista -->
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento</li><!-- guía por letra a, b, c, etc. -->
+                <li style="list-style-type: lower-alpha;">sub elemento</li>
+                <li style="list-style-type: lower-alpha;">sub elemento</li>
+            </ol>
+        </li>
+    </ol>
+    <!-- FIN DE LISTAS -->
+
+    <form action="/formulario" method="post">
+        <!-- (form-adentro colocamos distintos campos que vamos a utilizar para poder recopilar información del usuario.)
+        (action- especifica la URL a la que se enviarán los datos del formulario cuando se envíe.)
+        (method- define el método HTTP que se utilizará para enviar los datos del formulario.) -->
+
+        <label for="nombre">
+            Nombre</label><!-- (label-es para que tenga sentido el dato que queremos recopilar.)
+        (for-para que tenga foco en el campo es decir que cuando presiones nombre sea lo mismo que cuando tocas el campo.) -->
+
+        <input type="text" name="nombre" id="nombre"
+            placeholder="buscador" /><!-- (input-se usa para crear campos de entrada en un formulario, permitiendo a los usuarios ingresar datos.)
+        (type-varia para generar diferentes tipos de campo ej: type"text".)
+        (name-ej: name="nombre" el servidor va a recibir un objeto de llave valor donde la llave nombre. 
+        si en el buscador pones hola ese va a ser el valor de la llave)
+        (id-id es un identificador. )
+        (placeholder-indica al usuario qué información va.) -->
+    </form>
+
+    <!-- INICIO DEL EJEMPLO DE FORM - FORMULARIO -->
+    <form>
+        <!-- PRIMER CAMPO -->
+        <label for="ejemplo"> ejemplo</label>
+        <input type="text" name="ejemplo" id="ejemplo" placeholder="buscador" />
+
+        <br>
+        <!-- SEGUNDO CAMPO -->
+        <label for="ejemplo2"> ejemplo2</label>
+        <input type="text" name="ejemplo2" id="ejemplo2" placeholder="buscador" />
+        <br>
+        <label for="comentario"> comentario</label>
+        <textarea rows="10" cols="20" name="comentario" id="comentario"></textarea><!-- (textarea-área de texto)
+        (rows-número de filas-ancho)
+        (cols-número de columnas-alto) -->
+        <br>
+        <button>enviar</button>
+    </form>
+    <!-- FIN DEL EJEMPLO DE FORM - FORMULARIO -->
+
+    <!-- INICIO DE BUTTON -->
+
+    <button type="button">
+        <!-- Este botón es de tipo "button", lo que significa que no realiza ninguna acción por sí mismo.
+        Se usa generalmente para ejecutar un script de JavaScript cuando se hace clic en él. -->
+    </button>
+
+    <button type="reset">
+        <!-- Este botón es de tipo "reset". Cuando se hace clic, restablece todos los campos del formulario a sus valores predeterminados.
+        Es útil para permitir a los usuarios borrar el formulario y empezar de nuevo. -->
+    </button>
+
+    <button type="submit">
+        <!-- Este botón es de tipo "submit". Cuando se hace clic, envía el formulario al servidor.
+        Es el botón que generalmente se usa para enviar los datos del formulario para su procesamiento. -->
+    </button>
+
+    <!-- FIN DE BUTTON -->
+
+    <!-- ATRIBUTOS-identificador -->
+    class="NameDeLaClass"<!-- class asigna una o más clases a un elemento -->
+    id ="NameDelId"<!-- id asigna un identificador único a un elemento. -->
+    <p class="NombreDeLaClass">texto</p>
+    <p id="NombreDelId">texto</p>
+
+    <!-- CONTENEDORES -->
+    <header><!-- Contenido introductorio o de navegación, como el título del sitio o menú. --></header>
+
+    <section><!-- Agrupa contenido temático relacionado. -->
+        <article><!-- Contenido autónomo y autocontenible, como un post o una noticia. --> </article>
+    </section>
+
+    <footer> <!-- Información de pie de página, como derechos de autor o contacto. --></footer>
+
+    <div>  <!-- Una etiqueta de bloque genérica utilizada para agrupar y organizar otros elementos. -->
+        <h2>Encabezado dentro de un div</h2>
+        <p>Este es un párrafo dentro del div.</p>
+    </div>
+    <!-- FIN DE CONTENEDORES -->
+
+    <!-- TIPOS DE ENCABEZADOS -->
+    <h1> heading</h1> <!-- título-los motores de búsqueda utilizan estas etiquetas para poder indexar el contenido dentro de los motores de búsqueda -->
+    <h2>heading secundario</h2><!-- sub título. -->
+    <h3>heading</h3>
+    <h4>heading</h4>
+    <h5>heading</h5>
+    <h6>heading</h6>
+    <!-- FIN TIPOS DE ENCABEZADOS -->
+
+    <hr> <!-- se usa para separar el texto o secciones. -->
+
+    <p> párrafo 1</p><!-- p-párrafo -->
+    <p>párrafo 2 de clase<span style="color: aqua;">html</span></p>
+    <!-- span-referenciar una parte del texto. utilizamos style para cambiar el color de texto. -->
+    <p> párrafo 3 para la
+        <br><!-- br-se utiliza para hacer saltos de línea. pueden hacerse tantos saltos como uno quiera -->
+        clase de ejemplo
+    </p>
+    <!-- FIN DE PÁRRAFOS -->
+
+    <!-- ENLACES -->
+    <link rel="stylesheet" href=""> <!-- se usa en el head para enlazar archivos (php, js, html, css, etc.), librerías e imágenes.
+    (`rel="stylesheet"` indica que el archivo vinculado es una hoja de estilo CSS.)
+    (`href` especifica la URL a la que lleva el enlace.) -->
+
+    <a href="ruta de la página o archivo">este texto aparecerá en la página y será usado como link.</a>
+    <!-- a-es un hipervínculo y abre en la misma instancia (pestaña) del navegador. sirve para que podamos navegar entre páginas web o entre la nuestra. -->
+    <a target="_blank" href="ruta de la página o archivo">texto.</a>
+    <!-- target-abre una nueva instancia (pestaña) -->
+    <a href="ejemplo.html">ENTRAR AL EJEMPLO DE BLOG.</a>
+
+    <a href="mailto:Tucorreo@gmail.com">contáctame aquí</a>
+    <!-- El enlace ahora abrirá el cliente de correo con un asunto predefinido y un cuerpo de mensaje prellenado-->
+
+  <!-- La etiqueta <img> se usa para insertar imágenes en una página web -->
+
+
+<img src="img/whatsapp.png" alt="400">
+<!-- El atributo 'src' especifica la ruta del archivo de la imagen -->
+<!-- El valor 'img/whatsapp.png' es la ubicación del archivo de imagen dentro del directorio 'img' -->
+
+alt="400" 
+<!-- El atributo 'alt' proporciona un texto alternativo que describe la imagen en caso de que no se pueda mostrar -->
+<!-- En este caso, '400' no es una descripción adecuada; debería ser una descripción textual de la imagen, por ejemplo, 'Icono de WhatsApp' -->
+
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+HTML (HyperText Markup Language) es el estándar para crear y estructurar contenido en la web. Es un lenguaje de marcado que define la estructura de las páginas web mediante el uso de etiquetas. Aquí te explico sus aspectos clave:
+
+Componentes Básicos de HTML:
+Etiquetas y Elementos:
+
+Etiquetas: Son las instrucciones que HTML usa para definir la estructura del contenido. Las etiquetas están rodeadas por corchetes angulares, como <tag>.
+Elementos: Son las combinaciones de etiquetas de apertura y cierre que encierran el contenido. Por ejemplo, en <p>Este es un párrafo</p>, <p> es la etiqueta de apertura y </p> es la etiqueta de cierre.
+Atributos:
+
+Los atributos proporcionan información adicional sobre los elementos. Se colocan dentro de la etiqueta de apertura. Por ejemplo, en <a href="https://www.example.com">Enlace</a>, href es un atributo que especifica la URL a la que el enlace debe dirigir.
+Estructura de una Página HTML:
+
+<!DOCTYPE html>: Declara el tipo de documento y la versión de HTML que se está utilizando.
+<html>: Elemento raíz que contiene todo el contenido de la página.
+<head>: Contiene metadatos, enlaces a hojas de estilo y scripts, y el título de la página.
+<body>: Contiene el contenido visible de la página, como texto, imágenes, y otros elementos multimedia.
+Ejemplo Básico de HTML:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1>Bienvenido a Mi Página Web</h1>
+    <p>Este es un párrafo de texto.</p>
+    <a href="https://www.example.com">Visita Example.com</a>
+</body>
+</html>
+Funcionalidades de HTML:
+Estructuración: Define la estructura y el formato del contenido, como encabezados, párrafos, listas y tablas.
+Multimedia: Permite integrar imágenes, videos, y audios en una página web.
+Enlaces: Facilita la creación de hipervínculos que permiten la navegación entre diferentes páginas web.
+Formularios: Facilita la recolección de datos del usuario mediante campos de entrada, botones y otros elementos interactivos.
+HTML es fundamental para el desarrollo web y trabaja en conjunto con CSS (para el estilo) y JavaScript (para la funcionalidad interactiva) para crear páginas web completas y dinámicas.
